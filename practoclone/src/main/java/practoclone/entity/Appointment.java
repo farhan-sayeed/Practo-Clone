@@ -1,6 +1,5 @@
 package practoclone.entity;
 
-<<<<<<< HEAD
 import java.sql.Date;
 
 public class Appointment {
@@ -43,9 +42,4 @@ public class Appointment {
 		super();
 	}
 	
-	
-=======
-public class Appointment {
-
->>>>>>> branch 'master' of https://github.com/mrlazyProgrammer/Practo-Clone.git
 }
