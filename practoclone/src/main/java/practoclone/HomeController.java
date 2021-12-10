@@ -12,4 +12,9 @@ public class HomeController {
 		return "index";
 	}
 //Controller return index name or view name
+	@RequestMapping("/unauthorized")
+	public String unauthorized() {
+		System.out.println("Error 403 url");
+		return "Error 403";	
+		}
 }
