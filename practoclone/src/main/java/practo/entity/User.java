@@ -1,4 +1,4 @@
-package practoclone.entity;
+package practo.entity;
 
 public class User {
 	private String name;

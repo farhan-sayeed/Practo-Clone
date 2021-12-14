@@ -1,4 +1,4 @@
-package practoclone.entity;
+package practo.entity;
 
 import java.sql.Date;
 
