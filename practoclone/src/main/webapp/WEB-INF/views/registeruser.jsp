@@ -10,17 +10,52 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Sign up</title>
   </head>
   <body>
-    <form action="">
-    <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
+    <div class="container mt-5">
     
+    <h3 class="text-center">Registration form</h3>
+    <form action="processform" method="post">
+  <div class="form-group">
+    <label for="userName">User Name</label>
+    <input 
+    type="text"
+    class="form-control" 
+    id="userName" 
+    aria-describedby="emailHelp" 
+    placeholder="Enter full name"
+    name="username"
+    >
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" 
+    class="form-control" 
+    id="exampleInputEmail1" 
+    aria-describedby="emailHelp" 
+    placeholder="Enter email"
+    name="email"
+    >
+  </div>
+  
+  <div class="form-group">
+    <label for="userPassword">Password</label>
+    <input type="password" 
+    class="form-control" 
+    id="userPassword" 
+    aria-describedby="emailHelp" 
+    placeholder="Enter password"
+    name="password"
+    >
+  </div>
+  
+<div class="container text-center">
+	  <button type="submit" class="btn btn-success">Register here</button>
+</div>
     </form>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
