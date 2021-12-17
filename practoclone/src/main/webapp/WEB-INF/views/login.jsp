@@ -1,55 +1,45 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Login</title>
-</head>
-<body>
-<div>
-	<ul>
-		<li><a href="#" id="loginLink">Login</a></li>
-		<li><a href="C:\Users\hp\git\Practo-Clone\practoclone\src\main\webapp\WEB-INF\views/register.jsp" id="registerLink">Register</a></li>
-	</ul>
-</div>
-<div class="outer-box center-align outer-space">
-   <div>
-     <div>Mobile Number / Email ID</div>
-      
-    <input autofocus="" id="username" name="username" placeholder="Mobile Number / Email ID" type="text" value="">
-  
-   </div>
+<%@page isELIgnored="false" %>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <div>
-     <div>Password</div>
-          <input id="password" name="password" placeholder="Password" type="password" value="">
-   </div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-   <div id="forgotPasswordContainer" style="pointer-events: auto; opacity: 1;">
-   <div class="padding-top-8 font-12">
-      <div class="forget-pasword">
-      <a href="#" id="forgotPassword">Forgot password?</a>
-      </div>
-      <div style="clear:both"></div>
-   </div>
+    <title>Login</title>
+  </head>
+  <body>
+  <div class="container mt-5" style="width: 50%">
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address or User name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
   </div>
-   <div class="padding-top-20 font-12 textMuted">
-      <div class="otp-flow">
-       <div class="otp_flow">
-          <input id="otp_flow" name="otp_flow" type="checkbox" value="y">
-          <label for="otp_flow"></label>
-           <label class="mousePointer font-12 textMuted line-height-20" for="otp_flow">Login with OTP instead of password</label>
-       </div>
-      
-      </div>
-   </div>
-   
-   <div class="padding-top-20" style="margin-top: 20px;">
-      <button type="submit" class="btn  btn-lg common-btn practo-btn" id="login">
-		Login
-	  </button>
-   </div>
- </div>
-</body>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-success">Log in</button>
+</form>
+  </div>
+  <div class="container text-center mt-2">
+	  <button type="submit" class="btn btn-outline-success">Register</button>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>

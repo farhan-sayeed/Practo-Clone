@@ -28,6 +28,9 @@ public class LogController {
 		public String handleForm(@ModelAttribute User user,Model model) 
 		{
 			System.out.println(user);
+			if (user.getUsername().isBlank()) {
+				return "redirect:/registeruser";
+			}
 			//process
 			int createUser = this.userService.createUser(user);
 			model.addAttribute("msg","User created with id "+createUser);

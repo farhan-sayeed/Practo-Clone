@@ -25,10 +25,4 @@ public class HomeController {
 		return "login";	
 		}
 	
-	@RequestMapping("/register")
-	public String register() {
-		System.out.println("This is register url");
-		return "register";
-		
-	}
 }
