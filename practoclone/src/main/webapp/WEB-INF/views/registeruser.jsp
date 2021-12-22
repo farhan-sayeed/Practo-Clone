@@ -54,6 +54,9 @@
 <div class="container text-center">
 	  <button type="submit" class="btn btn-success">Register here</button>
 </div>
+<div class="container text-center mt-2">
+	  <a href="login"><button type="button" class="btn btn-light">Back to login</button></a>
+</div>
     </form>
     </div>
 

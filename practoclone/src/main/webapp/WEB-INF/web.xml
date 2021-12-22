@@ -10,6 +10,7 @@
   <servlet>
   	<servlet-name>spring</servlet-name>
   	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>   <!-- fully qualified class name -->
+  	<!-- <load-on-startup>1</load-on-startup> -->
   </servlet>
   
   <!-- Mapping -->
@@ -17,4 +18,9 @@
   	<servlet-name>spring</servlet-name>
   	<url-pattern>/</url-pattern>  <!-- handle all requests -->
   </servlet-mapping>
+  
+  <!-- Default web page/home page -->
+  <welcome-file-list>
+  	<welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
 </web-app>

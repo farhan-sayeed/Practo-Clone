@@ -32,7 +32,7 @@
 </form>
   </div>
   <div class="container text-center mt-2">
-	  <button type="submit" class="btn btn-outline-success">Register</button>
+	  <a href="registeruser"><button type="submit" class="btn btn-outline-success">Register</button></a>
 </div>
 
 
