@@ -28,7 +28,7 @@ public class LogController {
 		public String handleForm(@ModelAttribute User user,Model model) 
 		{
 			System.out.println(user);
-			if (user.getUsername().isBlank()) {
+			if (user.getUsername().isBlank()||user.getEmail().isBlank()||user.getPassword().isBlank()) {
 				return "redirect:/registeruser";
 			}
 			//process
